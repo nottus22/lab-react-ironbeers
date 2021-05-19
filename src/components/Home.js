@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import beersIMG from '../assets/beers.png';
+import newbeerIMG from '../assets/new-beer.png';
+import randombeerIMG from '../assets/random-beer.png'
 
 export default class Home extends Component {
   render() {
@@ -7,7 +10,7 @@ export default class Home extends Component {
       <div>
         <div>
           <Link to="/beers">
-            <img src={'../assets/beers.png'} alt='beer'/>
+            <img src={beersIMG} alt='beers'/>
             <h2>Beers</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
@@ -19,7 +22,7 @@ export default class Home extends Component {
 
         <div>
           <Link to="/new-beer">
-            <img src={'../assets/new-beer.png'} alt='new-beer'/>
+            <img src={newbeerIMG} alt='new-beer'/>
             <h2>New Beer</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
@@ -31,7 +34,7 @@ export default class Home extends Component {
 
         <div>
           <Link to="/random-beer">
-            <img src={'../assets/random-beer.png'} alt='random-beer'/>
+            <img src={randombeerIMG} alt='random-beer'/>
             <h2>Random Beer</h2>
             <p>
               Provident distinctio a optio id illo commodi! Ducimus amet quia

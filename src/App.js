@@ -1,16 +1,20 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Link, Switch, Route } from 'react-router-dom';
 // components imports
 import nothome from './components/Home';
+import Navbar from './components/Navbar';
+import Beers from './components/Beers'
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Switch>
-        <Route exact path="/" component={nothome} />
-      </Switch>
+      <Navbar />
+        <Switch>
+          <Route exact path="/" component={nothome} />
+          <Route exact path='/beers' component={Beers} />
+        </Switch>
     </div>
   );
 }
